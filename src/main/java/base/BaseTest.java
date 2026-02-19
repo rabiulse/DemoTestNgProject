@@ -16,9 +16,9 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-    	 config = new ConfigReader();
-    	 String url = config.getProperty("url");
-         int wait = Integer.parseInt(config.getProperty("implicitWait"));
+    	config = new ConfigReader();
+    	String url = config.getProperty("url");
+        int wait = Integer.parseInt(config.getProperty("implicitWait"));
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
