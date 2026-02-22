@@ -1,25 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-21T16:56:23 IST" name="Test Suite" finished-at="2026-02-21T16:56:32 IST" duration-ms="8483">
+  <suite started-at="2026-02-22T10:14:47 IST" name="Test Suite" finished-at="2026-02-22T10:14:59 IST" duration-ms="11769">
     <groups>
     </groups>
-    <test started-at="2026-02-21T16:56:23 IST" name="CheckBoxTests" finished-at="2026-02-21T16:56:32 IST" duration-ms="8483">
+    <test started-at="2026-02-22T10:14:47 IST" name="CheckBoxTests" finished-at="2026-02-22T10:14:59 IST" duration-ms="11769">
       <class name="Test.CheckboxTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@20140db9]" started-at="2026-02-21T16:56:23 IST" name="setUp" finished-at="2026-02-21T16:56:31 IST" duration-ms="7452" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:48 IST" name="setUp" finished-at="2026-02-22T10:14:53 IST" duration-ms="5420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@20140db9]" started-at="2026-02-21T16:56:31 IST" name="VerifyCheckBox" finished-at="2026-02-21T16:56:31 IST" duration-ms="677" status="PASS">
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:53 IST" name="VerifyCheckBox" finished-at="2026-02-22T10:14:54 IST" duration-ms="916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@20140db9]" started-at="2026-02-21T16:56:31 IST" name="tearDown" finished-at="2026-02-21T16:56:32 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:54 IST" name="tearDown" finished-at="2026-02-22T10:14:54 IST" duration-ms="268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.CheckboxTest -->
+      <class name="Test.JavaScriptAlertTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:54 IST" name="setUp" finished-at="2026-02-22T10:14:58 IST" duration-ms="4324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:58 IST" name="VerifyCheckBox" finished-at="2026-02-22T10:14:59 IST" duration-ms="541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCheckBox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:59 IST" name="tearDown" finished-at="2026-02-22T10:14:59 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.JavaScriptAlertTest -->
     </test> <!-- CheckBoxTests -->
   </suite> <!-- Test Suite -->
 </testng-results>

@@ -3,6 +3,7 @@
     <test name="CheckBoxTests">
         <classes>
             <class name="Test.CheckboxTest"/>
+            <class name="Test.JavaScriptAlertTest"/>
         </classes>
     </test>
 </suite>
