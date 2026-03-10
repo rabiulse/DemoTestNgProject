@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Test Suite</span>
+              <span class="suite-name border-failed">Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Test_Suite" class="hide-methods failed suite-Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Test_Suite -->
+                      <a href="#" panel-name="suite-Test_Suite" class="show-methods failed suite-Test_Suite"> (show)</a> <!-- show-methods failed suite-Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Suite" title="Test.BrokenLinkTest" class="method navigator-link" hash-for-method="brokenTest">brokenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,11 +125,6 @@
                         <a href="#" panel-name="suite-Test_Suite" title="Test.JavaScriptAlertTest" class="method navigator-link" hash-for-method="VerifyCheckBox">VerifyCheckBox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Suite" title="Test.BrokenLinkTest" class="method navigator-link" hash-for-method="brokenTest">brokenTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Test_Suite -->
                   </li>
                 </ul>
@@ -128,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Suite" class="panel Test_Suite">
-          <div class="suite-Test_Suite-class-passed">
+          <div class="suite-Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Test.BrokenLinkTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -139,10 +148,16 @@
                   <a name="brokenTest">
                   </a> <!-- brokenTest -->
                   <span class="method-name">brokenTest</span>
+                  <div class="stack-trace">java.lang.AssertionError:  Did not get expected Links expected [47] but found [46]
+	at pages.javaScriptAlert.brokenLinkTest(javaScriptAlert.java:35)
+	at Test.BrokenLinkTest.brokenTest(BrokenLinkTest.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-passed -->
+          </div> <!-- suite-Test_Suite-class-failed -->
           <div class="suite-Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -183,6 +198,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utils.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;SmokeTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Test.CheckboxTest&quot;/&gt;
@@ -229,22 +247,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'brokenTest')
-data.setCell(0, 2, 'Test.BrokenLinkTest')
-data.setCell(0, 3, 16919);
+data.setCell(0, 1, 'VerifyCheckBox')
+data.setCell(0, 2, 'Test.CheckboxTest')
+data.setCell(0, 3, 686);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerifyCheckBox')
-data.setCell(1, 2, 'Test.CheckboxTest')
-data.setCell(1, 3, 750);
+data.setCell(1, 2, 'Test.JavaScriptAlertTest')
+data.setCell(1, 3, 529);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyCheckBox')
-data.setCell(2, 2, 'Test.JavaScriptAlertTest')
-data.setCell(2, 3, 586);
+data.setCell(2, 1, 'brokenTest')
+data.setCell(2, 2, 'Test.BrokenLinkTest')
+data.setCell(2, 3, 57);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -277,41 +295,43 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyCheckBox</span>
-                <span class="method-start">10329 ms</span>
+                <span class="method-start">6225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11091 ms</span>
+                <span class="method-start">6911 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.JavaScriptAlertTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11400 ms</span>
+                <span class="method-start">7182 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">VerifyCheckBox</span>
-                <span class="method-start">17316 ms</span>
+                <span class="method-start">11824 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17905 ms</span>
+                <span class="method-start">12353 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Test.BrokenLinkTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18140 ms</span>
+                <span class="method-start">12554 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">brokenTest</span>
-                <span class="method-start">23734 ms</span>
+                <span class="method-start">17137 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40655 ms</span>
+                <span class="method-start">17362 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

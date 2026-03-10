@@ -1,10 +1,13 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Test Suite">
-    <test name="SmokeTest">
-        <classes>
-            <class name="Test.CheckboxTest"/>
-            <class name="Test.JavaScriptAlertTest"/>
-            <class name="Test.BrokenLinkTest"/>
-        </classes>
-    </test>
+	<listeners>
+		<listener class-name="utils.TestListener" />
+	</listeners>
+	<test name="SmokeTest">
+		<classes>
+			<class name="Test.CheckboxTest" />
+			<class name="Test.JavaScriptAlertTest" />
+			<class name="Test.BrokenLinkTest" />
+		</classes>
+	</test>
 </suite>

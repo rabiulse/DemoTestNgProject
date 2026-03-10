@@ -7,6 +7,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class javaScriptAlert {
 	WebDriver driver;
@@ -31,6 +32,9 @@ public class javaScriptAlert {
 		// 1. Collect all links with 'a' tag
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		System.out.println("Total links found: " + links.size());
+		Assert.assertEquals(links.size(), 47 ," Did not get expected Links");
+		
+		
 		for (WebElement element : links) {
 			String url = element.getAttribute("href");
 			// 2. Filter out null or empty links

@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-    protected WebDriver driver;
+    public static WebDriver driver;
     ConfigReader config;
 
     @BeforeMethod

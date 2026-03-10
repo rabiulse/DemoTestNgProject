@@ -1,49 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-10T12:58:14 IST" name="Test Suite" finished-at="2026-03-10T12:58:55 IST" duration-ms="40963">
+  <suite started-at="2026-03-10T15:55:52 IST" name="Test Suite" finished-at="2026-03-10T15:56:10 IST" duration-ms="17672">
     <groups>
     </groups>
-    <test started-at="2026-03-10T12:58:14 IST" name="SmokeTest" finished-at="2026-03-10T12:58:55 IST" duration-ms="40963">
+    <test started-at="2026-03-10T15:55:52 IST" name="SmokeTest" finished-at="2026-03-10T15:56:10 IST" duration-ms="17672">
       <class name="Test.BrokenLinkTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:32 IST" name="setUp" finished-at="2026-03-10T12:58:37 IST" duration-ms="5594" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.BrokenLinkTest@27406a17]" started-at="2026-03-10T15:56:05 IST" name="setUp" finished-at="2026-03-10T15:56:10 IST" duration-ms="4583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="brokenTest()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:37 IST" name="brokenTest" finished-at="2026-03-10T12:58:54 IST" duration-ms="16919" status="PASS">
+        <test-method signature="brokenTest()[pri:0, instance:Test.BrokenLinkTest@27406a17]" started-at="2026-03-10T15:56:10 IST" name="brokenTest" finished-at="2026-03-10T15:56:10 IST" duration-ms="57" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ Did not get expected Links expected [47] but found [46]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  Did not get expected Links expected [47] but found [46]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at pages.javaScriptAlert.brokenLinkTest(javaScriptAlert.java:35)
+at Test.BrokenLinkTest.brokenTest(BrokenLinkTest.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:54 IST" name="tearDown" finished-at="2026-03-10T12:58:55 IST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.BrokenLinkTest@27406a17]" started-at="2026-03-10T15:56:10 IST" name="tearDown" finished-at="2026-03-10T15:56:10 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.BrokenLinkTest -->
       <class name="Test.CheckboxTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:14 IST" name="setUp" finished-at="2026-03-10T12:58:24 IST" duration-ms="10316" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@18df8434]" started-at="2026-03-10T15:55:53 IST" name="setUp" finished-at="2026-03-10T15:55:59 IST" duration-ms="6223" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:24 IST" name="VerifyCheckBox" finished-at="2026-03-10T12:58:25 IST" duration-ms="750" status="PASS">
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@18df8434]" started-at="2026-03-10T15:55:59 IST" name="VerifyCheckBox" finished-at="2026-03-10T15:55:59 IST" duration-ms="686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:25 IST" name="tearDown" finished-at="2026-03-10T12:58:25 IST" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@18df8434]" started-at="2026-03-10T15:55:59 IST" name="tearDown" finished-at="2026-03-10T15:56:00 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.CheckboxTest -->
       <class name="Test.JavaScriptAlertTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:25 IST" name="setUp" finished-at="2026-03-10T12:58:31 IST" duration-ms="5916" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.JavaScriptAlertTest@76b1e9b8]" started-at="2026-03-10T15:56:00 IST" name="setUp" finished-at="2026-03-10T15:56:04 IST" duration-ms="4642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:31 IST" name="VerifyCheckBox" finished-at="2026-03-10T12:58:32 IST" duration-ms="586" status="PASS">
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.JavaScriptAlertTest@76b1e9b8]" started-at="2026-03-10T15:56:04 IST" name="VerifyCheckBox" finished-at="2026-03-10T15:56:05 IST" duration-ms="529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:32 IST" name="tearDown" finished-at="2026-03-10T12:58:32 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.JavaScriptAlertTest@76b1e9b8]" started-at="2026-03-10T15:56:05 IST" name="tearDown" finished-at="2026-03-10T15:56:05 IST" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
