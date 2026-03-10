@@ -10,7 +10,7 @@ public class JavaScriptAlertTest extends BaseTest {
 		javaScriptAlert javascriptalert = new javaScriptAlert(driver);
 		javascriptalert.clickOnJavaScriptAlert();
         // Add assertion here
-        System.out.println("Checkbox Test Executed");
+        System.out.println("javascriptalert Test Executed");
 	}
 	
 

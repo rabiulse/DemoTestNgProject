@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-22T10:14:47 IST" name="Test Suite" finished-at="2026-02-22T10:14:59 IST" duration-ms="11769">
+  <suite started-at="2026-03-10T12:58:14 IST" name="Test Suite" finished-at="2026-03-10T12:58:55 IST" duration-ms="40963">
     <groups>
     </groups>
-    <test started-at="2026-02-22T10:14:47 IST" name="CheckBoxTests" finished-at="2026-02-22T10:14:59 IST" duration-ms="11769">
-      <class name="Test.CheckboxTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:48 IST" name="setUp" finished-at="2026-02-22T10:14:53 IST" duration-ms="5420" status="PASS">
+    <test started-at="2026-03-10T12:58:14 IST" name="SmokeTest" finished-at="2026-03-10T12:58:55 IST" duration-ms="40963">
+      <class name="Test.BrokenLinkTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:32 IST" name="setUp" finished-at="2026-03-10T12:58:37 IST" duration-ms="5594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:53 IST" name="VerifyCheckBox" finished-at="2026-02-22T10:14:54 IST" duration-ms="916" status="PASS">
+        <test-method signature="brokenTest()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:37 IST" name="brokenTest" finished-at="2026-03-10T12:58:54 IST" duration-ms="16919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.BrokenLinkTest@76b1e9b8]" started-at="2026-03-10T12:58:54 IST" name="tearDown" finished-at="2026-03-10T12:58:55 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.BrokenLinkTest -->
+      <class name="Test.CheckboxTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:14 IST" name="setUp" finished-at="2026-03-10T12:58:24 IST" duration-ms="10316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:24 IST" name="VerifyCheckBox" finished-at="2026-03-10T12:58:25 IST" duration-ms="750" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@25641d39]" started-at="2026-02-22T10:14:54 IST" name="tearDown" finished-at="2026-02-22T10:14:54 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.CheckboxTest@5677323c]" started-at="2026-03-10T12:58:25 IST" name="tearDown" finished-at="2026-03-10T12:58:25 IST" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.CheckboxTest -->
       <class name="Test.JavaScriptAlertTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:54 IST" name="setUp" finished-at="2026-02-22T10:14:58 IST" duration-ms="4324" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:25 IST" name="setUp" finished-at="2026-03-10T12:58:31 IST" duration-ms="5916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:58 IST" name="VerifyCheckBox" finished-at="2026-02-22T10:14:59 IST" duration-ms="541" status="PASS">
+        <test-method signature="VerifyCheckBox()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:31 IST" name="VerifyCheckBox" finished-at="2026-03-10T12:58:32 IST" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCheckBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.JavaScriptAlertTest@69e153c5]" started-at="2026-02-22T10:14:59 IST" name="tearDown" finished-at="2026-02-22T10:14:59 IST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.JavaScriptAlertTest@17f62e33]" started-at="2026-03-10T12:58:32 IST" name="tearDown" finished-at="2026-03-10T12:58:32 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.JavaScriptAlertTest -->
-    </test> <!-- CheckBoxTests -->
+    </test> <!-- SmokeTest -->
   </suite> <!-- Test Suite -->
 </testng-results>
