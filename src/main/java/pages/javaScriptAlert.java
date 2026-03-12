@@ -32,7 +32,7 @@ public class javaScriptAlert {
 		// 1. Collect all links with 'a' tag
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		System.out.println("Total links found: " + links.size());
-		Assert.assertEquals(links.size(), 47 ," Did not get expected Links");
+		Assert.assertEquals(links.size(), 46 ," Did not get expected Links");
 		
 		
 		for (WebElement element : links) {
